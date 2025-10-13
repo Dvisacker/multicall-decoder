@@ -1,0 +1,31 @@
+{
+  "name": "multicall-decoder",
+  "version": "1.0.0",
+  "description": "A CLI tool to decode multicall transaction data using 4byte directory and Etherscan API",
+  "main": "dist/index.js",
+  "bin": {
+    "multicall-decoder": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "test": "vitest"
+  },
+  "keywords": ["multicall", "decoder", "ethereum", "cli"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.21.54",
+    "commander": "^12.0.0",
+    "axios": "^1.7.2",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  }
+}
